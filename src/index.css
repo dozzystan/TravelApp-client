@@ -1,0 +1,75 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #ccd917;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #ccd917;
+}
+
+.bgColor {
+  background-color: #ce9819 !important;
+}
+
+.tagColor {
+  background-color: #989da2;
+}
+
+.layout-container {
+  max-width: 1536px;
+  margin: 0 auto;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #9c460d;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  min-width: 180px;
+  height: 400px !important;
+  cursor: pointer;
+  transition: box-shadow 0.2 ease-in-out;
+}
+
+.cardbody {
+  overflow: hidden;
+  mask-image: linear-gradient(180deg, #000 60%, transparent);
+}
+
+@media (min-width: 768px) {
+  .card:focus,
+  .card:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color !important;
+  }
+  .card:hover {
+    box-shadow: -2px 11px 54px -24px rgba(0, 0, 0, 0.48) !important;
+    -webkit-box-shadow: -2px 11px 54px -24px rgba(0, 0, 0, 0.48) !important;
+    -moz-box-shadow: -2px 11px 54px -24px rgba(0, 0, 0, 0.48) !important;
+}
+}
